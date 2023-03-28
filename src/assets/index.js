@@ -1,0 +1,21 @@
+import logo1 from './logo.png';
+import logo2 from './new-logo.png';
+import logo3 from './new-logo-small.png';
+import icon1 from './inventoryIcon.png';
+import icon2 from './icons/supplier.svg';
+import img1 from './nodisponible.png';
+import user1 from './hombre.png';
+import user2 from './mujer.png';
+import chef_1 from './chef1.jpg';
+import chef_2 from './chef2.jpg';
+
+export const logo = logo1;
+export const newLogo = logo2;
+export const newLogoSmall = logo3;
+export const inventoryIcon = icon1;
+export const supplierIcon = icon2;
+export const noAvailableImg = img1;
+export const userMan = user1;
+export const userWoman = user2;
+export const chef1 = chef_1;
+export const chef2 = chef_2;

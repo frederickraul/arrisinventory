@@ -1,0 +1,141 @@
+
+
+.auth-wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    }
+
+@media screen and (max-width: 768px) {
+    .auth-wrapper{
+        background: rgb(8,161,140);
+        background: linear-gradient(180deg, rgba(8,161,140,1) 0%, rgba(8,161,140,1) 49%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+    }
+}
+
+.auth-background{
+    background-image: url('../assets/chef1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 200px;
+
+  
+}
+
+
+.auth-container {
+    position: relative;
+    width: 400px;
+    padding: 50px 50px;
+    background: #FFF;
+    text-align: center;
+    border-radius: 100% 0% 0% 0% / 55% 0% 0% 0%;
+    
+    
+}
+@media screen and (max-width: 768px) {
+    .auth-container {
+        width: 100vw !important;
+    }
+}
+.auth-container::after {
+    content: '';
+    position: absolute;
+    top: -200px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 500px;
+
+    z-index: -1;
+}
+.auth-container .rocket {
+    position: absolute;
+    top: -120px;
+    left: 40%;
+    animation: animate 1s ease infinite alternate;
+    transition: all 0.3s ease;
+}
+.auth-container .text {
+    margin: 30px 0 5px 0;
+}
+.auth-container .text h1 {
+    color: #2ba44f;
+    font-size: 2.5rem;
+    text-shadow: -1px -1px 10px rgba(255,255,255,.7);
+
+}
+.auth-container .text p {
+    font-size: 1.5rem;
+    color: #d2dd7c;
+}
+.auth-container .form .animated-input {
+    display: flex;
+    flex-direction: column;
+}
+.auth-container .form .animated-input input[type='text'] ,
+.auth-container .form .animated-input input[type='password'] {
+    font-size: 1.3rem;
+    padding: 20px 10px 2px 10px;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px #616161;
+    background: none;
+    transition: all 0.3s ease;
+}
+.auth-container .form .animated-input input[type='text']:focus ,
+.auth-container .form .animated-input input[type='password']:focus {
+    padding: 20px 10px;
+    border-color: #2ba44f;
+}
+.auth-container .form .animated-input input[type='password'] {
+    margin-top: 10px;
+}
+.auth-container .form .check {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 10px 0;
+    user-select: none;
+    margin-top: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+
+
+.auth-container .form .check .remember {
+    color: #2ba44f;
+    font-weight: bold;
+}
+.auth-container .form .check .forget a {
+    text-decoration: none;
+    color: #616161;
+}
+.auth-container .form .check .forget a:hover {
+    color: #2ba44f;
+}
+
+.auth-container .btn:hover {
+    background: #d2dd7c;
+}
+
+.auth-container .account a {
+    text-decoration: none;
+    color: #616161;
+}
+.auth-container .account a:hover {
+    color: #2ba44f;
+}
+@keyframes animate {
+    0% {top: -120px;}
+    100% {top: -130px;}
+}
+
+.alert-container{
+    padding-top: -200px;
+
+}
